@@ -27,3 +27,7 @@ export const CLOUDINARY_API_SECRET = getEnv("CLOUDINARY_API_SECRET");
 
 //stripe
 export const STRIPE_KEY = getEnv("STRIPE_KEY");
+
+//email
+export const MAILTRAP_TOKEN = getEnv("MAILTRAP_TOKEN")
+export const USER_EMAIL = getEnv("USER_EMAIL")

@@ -18,6 +18,7 @@ import Profile from "./pages/user/Profile";
 import Success from "./pages/payment/Success";
 import Cancel from "./pages/payment/Cancel";
 import Orders from "./pages/user/Orders";
+import PasswordResetPage from "./pages/auth/ResetPassword";
 
 function App() {
   const { isAuthenticated, isLoading, user } = useTypedSelector(
@@ -64,6 +65,7 @@ function App() {
       <Route element={<RootLayout />}>
         <Route path="/success" element={<Success />} />
         <Route path="/cancel" element={<Cancel />} />
+        <Route path="/reset-password" element={<PasswordResetPage />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
